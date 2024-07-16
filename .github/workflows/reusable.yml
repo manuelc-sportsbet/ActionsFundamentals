@@ -19,6 +19,9 @@ jobs:
     steps:
       - name: print contexts
         run: echo "github context = ${{ toJSON(github) }}"
+
+      - name: print ip address
+        run: ip addr
         
       - name: Greet someone
         run: echo "Hello ${{ inputs.who-to-greet }}"
